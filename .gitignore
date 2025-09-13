@@ -1,0 +1,18 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+env/
+venv/
+.ipynb_checkpoints/
+*.egg-info/
+.DS_Store
+
+# Secrets
+.env
+*.key
+*.pem
+
+# Data & models (keep large stuff out of git)
+data/
+models/
