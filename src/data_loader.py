@@ -1,14 +1,19 @@
 # src/data_loader.py
-import os
+from pathlib import Path
 import pandas as pd
 
-def load_local_sample(path: str = "data/sample_bikeshare.csv") -> pd.DataFrame:
-    """Load the tiny sample CSV (used for dev/testing)."""
-    if not os.path.exists(path):
-        raise FileNotFoundError(f"Missing sample data at {path}.")
-    df = pd.read_csv(path, parse_dates=["date"])
-    return df
+# repo root = parent of src/
+REPO_ROOT = Path(__file__).resolve().parents[1]
+DEFAULT_SAMPLE = REPO_ROOT / "data" / "sample_bikeshare.csv"
+
+def load_local_sample(path: str | Path = DEFAULT_SAMPLE) -> pd.DataFrame:
+    p = Path(path)
+    if not p.exists():
+        raise FileNotFoundError(f"Missing sample data at {p.resolve()}")
+    return pd.read_csv(p, parse_dates=["date"])
 
 if __name__ == "__main__":
     df = load_local_sample()
     print(df.head())
+
+
