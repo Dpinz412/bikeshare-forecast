@@ -41,5 +41,5 @@ pip install -r requirements.txt
 jupyter notebook notebooks/
 
 
-
+Current status: repo initialized; first EDA notebook pushed (see notebooks/01_eda.ipynb).
 
