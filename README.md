@@ -13,6 +13,9 @@
 \- Capital Bikeshare rides (Feb–Apr 2024) + DC weather.
 
 \- No raw data committed; use a small sample or a fetch script if needed.
+\- Includes a tiny sample at `data/sample_bikeshare.csv` (gitignored directory).
+\- Use `src/data_loader.py` to read local sample for dev; replace with real fetch later.
+
 
 
 
