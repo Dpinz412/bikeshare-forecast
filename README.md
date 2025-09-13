@@ -1,35 +1,35 @@
-\# Capital Bikeshare Demand Forecasting (Washington, DC)
+# Capital Bikeshare Demand Forecasting (Washington, DC)
 
 
 
-\*\*What:\*\* Forecast daily pickups/dropoffs using weather + calendar features.
+**What:** Forecast daily pickups/dropoffs using weather + calendar features.
 
-\*\*Why:\*\* Better staffing/rebalancing decisions; fewer stockouts.
-
-
-
-\## Data
-
-\- Capital Bikeshare rides (Feb–Apr 2024) + DC weather.
-
-\- No raw data committed; use a small sample or a fetch script if needed.
-\- Includes a tiny sample at `data/sample_bikeshare.csv` (gitignored directory).
-\- Use `src/data_loader.py` to read local sample for dev; replace with real fetch later.
+**Why:** Better staffing/rebalancing decisions; fewer stockouts.
 
 
 
+## Data
 
-\## Method
+- Capital Bikeshare rides (Feb–Apr 2024) + DC weather.
 
-\- Feature engineering (weather, calendar, lags).
-
-\- Models: regularized linear regression, kNN, decision tree, random forest, gradient boosting, simple NN.
-
-\- Metrics: RMSE / MAE vs. baseline.
-
+- No raw data committed; use a small sample or a fetch script if needed.
+- Includes a tiny sample at `data/sample_bikeshare.csv` (gitignored directory).
+- Use `src/data_loader.py` to read local sample for dev; replace with real fetch later.
 
 
-\## Quickstart
+
+
+## Method
+
+- Feature engineering (weather, calendar, lags).
+
+- Models: regularized linear regression, kNN, decision tree, random forest, gradient boosting, simple NN.
+
+- Metrics: RMSE / MAE vs. baseline.
+
+
+
+## Quickstart
 
 ```bash
 
