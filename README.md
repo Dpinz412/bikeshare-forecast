@@ -59,7 +59,7 @@ data_loader.py # robust pathing to sample/real data
 ... # helpers (features, models, metrics) if you add them
 notebooks/
 01_eda.ipynb
-Assignment 3.ipynb # final analysis (rename if you prefer)
+Capital Bikeshare Analysis.ipynb # final analysis (rename if you prefer)
 models/ # optional, gitignored
 figures/ # optional, exported charts for README
 ```
@@ -86,7 +86,7 @@ run notebooks
 
 jupyter notebook
 
-open notebooks/01_eda.ipynb (sanity) then Assignment 3.ipynb (full flow)
+open notebooks/01_eda.ipynb (sanity) then Capital Bikeshare Analysis 3.ipynb (full flow)
 
 > Data goes under `data/` (gitignored). Keep raw CSVs out of git.
 ```
@@ -121,7 +121,7 @@ open notebooks/01_eda.ipynb (sanity) then Assignment 3.ipynb (full flow)
 - Tree ensembles underperform here (likely limited station-level data + simple feature interactions).
 - NN doesn’t beat linear baselines on this feature set/size.
 
-> Source: `notebooks/Assignment 3.ipynb`.
+> Source: `notebooks/Capital Bikeshare Analysis.ipynb`.
 
 ---
 
